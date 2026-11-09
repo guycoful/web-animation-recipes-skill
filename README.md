@@ -64,7 +64,8 @@ mkdir -p ~/.claude/skills/web-animation-recipes
 # שלושת הקבצים
 for f in SKILL placements recipes; do
   curl -fsS -o ~/.claude/skills/web-animation-recipes/$f.md \
-    https://raw.githubusercontent.com/guycoful/web-animation-recipes-skill/main/skills/web-animation-recipes/$f.md
+    https://raw.githubusercontent.com/guycoful/web-animation-recipes-skill/main/skills/web-animation-recipes/$f.md \
+    || { echo "ההורדה של $f נכשלה"; break; }
 done
 ```
 
@@ -104,7 +105,7 @@ User: 1
 
 Claude: על מה האתר בנוי, מה התוכן, והאם הוא חייב לעבוד בכל הדפדפנים ובמובייל ?
 
-User: Next.js, צבעי המותג כחול ולבן, כן, גם במובייל
+User: Next.js, צבעי המותג כחול ולבן, כן, בכל הדפדפנים ובמובייל
 
 Claude: [בונה את המתג, עם fallback ל-prefers-reduced-motion
          ופרמטרים לכיוונון בראש הקומפוננטה]
