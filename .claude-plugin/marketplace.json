@@ -1,0 +1,22 @@
+{
+  "name": "web-animation-recipes-skill",
+  "owner": {
+    "name": "Guy Cohen",
+    "url": "https://github.com/guycoful"
+  },
+  "plugins": [
+    {
+      "name": "web-animation-recipes",
+      "source": "./",
+      "description": "Pick where and which interactive animation to add to a website, then build it from 30 recipes (hero, scroll, cards, forms, controls, navigation, product showcase, cursor companion).",
+      "version": "1.0.0",
+      "author": {
+        "name": "Guy Cohen"
+      },
+      "license": "MIT"
+    }
+  ],
+  "metadata": {
+    "description": "Guy Cohen: interactive web animation recipes for Claude Code"
+  }
+}

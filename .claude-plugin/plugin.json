@@ -1,0 +1,13 @@
+{
+  "name": "web-animation-recipes",
+  "version": "1.0.0",
+  "description": "Pick where and which interactive animation to add to a website, then build it from 30 recipes (hero, scroll, cards, forms, controls, navigation, product showcase, cursor companion).",
+  "author": {
+    "name": "Guy Cohen",
+    "url": "https://github.com/guycoful"
+  },
+  "homepage": "https://github.com/guycoful/web-animation-recipes-skill",
+  "repository": "https://github.com/guycoful/web-animation-recipes-skill",
+  "license": "MIT",
+  "keywords": ["animation", "webgl", "threejs", "frontend", "ui", "motion"]
+}
