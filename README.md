@@ -61,12 +61,14 @@ Built by [Guy Cohen](https://www.linkedin.com/in/guycohen-ai/), AI consultant, I
 # תיקיית הסקיל
 mkdir -p ~/.claude/skills/web-animation-recipes
 
-# שלושת הקבצים
+# שלושת הקבצים. אם הורדה נכשלת, הפקודה עוצרת ומחזירה כישלון
+(
 for f in SKILL placements recipes; do
   curl -fsS -o ~/.claude/skills/web-animation-recipes/$f.md \
     https://raw.githubusercontent.com/guycoful/web-animation-recipes-skill/main/skills/web-animation-recipes/$f.md \
-    || { echo "ההורדה של $f נכשלה"; break; }
+    || { echo "ההורדה של $f נכשלה. קבצים שכבר ירדו נשארים בתיקייה, תריץ שוב."; exit 1; }
 done
+)
 ```
 
 או להוריד את שלושת הקבצים מ-`skills/web-animation-recipes/` ולשים אותם ב:
